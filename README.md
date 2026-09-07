@@ -1,16 +1,61 @@
-# React + Vite
+# 1Fi Marketplace
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive React implementation of the 1Fi Marketplace experience, built as part of the SDE Intern assignment.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 1Fi Marketplace product listing
+- Product images, names and pricing
+- Product variant selection
+- Dynamic variant-based pricing
+- EMI plans for 6, 12 and 24 months
+- Dynamic EMI calculation based on selected variant
+- Product details view
+- Search products
+- Category filtering
+- Loading states
+- Error and retry handling
+- Responsive mobile and desktop UI
+- Proceed with EMI interaction
+- Existing Shop navigation preserved
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- JavaScript
+- CSS
+- React Hooks
 
-## Expanding the Oxlint configuration
+## Data & API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+The Marketplace uses mock API-style data retrieval to simulate dynamic product loading.
+
+Product and variant data are maintained separately from the UI, while pricing and EMI values are calculated dynamically based on the selected product variant.
+
+## EMI Calculation
+
+EMI plans are dynamically generated for:
+
+- 6 months
+- 12 months
+- 24 months
+
+The monthly amount is calculated based on the selected product variant price.
+
+## Responsive Design
+
+The Marketplace is optimized for:
+
+- Desktop
+- Tablet
+- Mobile
+
+The interface was tested on a mobile device to verify responsive layout, product selection, variant pricing, EMI selection and CTA functionality.
+
+## Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/vinithreddy123/1fi-marketplace.git
